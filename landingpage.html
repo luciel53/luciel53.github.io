@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<link rel="stylesheet" href="header.css" />
+		<link rel="stylesheet" href="footer.css" />
+		<link rel="stylesheet" href="landingpage.css" />
+
+		<title>PetMeeting </title>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="/scripts/home.js"></script>
+	</head>
+
+	<body onload="startTime()">
+		<header>
+				<div class="header_container">
+					<!--- NAV BAR --->
+					<ul class="nav_list">
+						<li class="accueil"><a href="#introduction">INTRODUCTION</a></li>
+						<li class="members"><a href="#features">FEATURES</a></li>
+						<li class="contact"><a href="#about">ABOUT US</a></li>
+
+							<li class="inscription"><a href="{% url 'register' %}">Inscription</a></li>
+							<li class="connection"><a href="{% url 'login' %}">Connexion</a></li>
+
+						<!-- add a clock -->
+					<div id="clock"></div>
+					<script>
+					function startTime() {
+						const date = new Date();
+						let hour = date.getHours();
+						let minute = date.getMinutes();
+						let second = date.getSeconds();
+						minute = checkTime(minute);
+						second = checkTime(second);
+						document.getElementById("clock").innerHTML = hour + ":" + minute + ":" + second;
+						setTimeout(startTime, 1000);
+						}
+					function checkTime(i) {
+						if (i < 10) {i = 0 + i}; // add zero in front of numbers < 10
+							return i;
+					}
+					</script>
+
+				</div>
+		</header>
+
+	</body>
+	<section id="introduction">
+		<div class="lima_picture"></div>
+		<div class="body_title">
+			<h1 class="petmeeting">PetMeeting</h1>
+			<h2 class="one_line_description">A tool for cats' breeders</h2>
+			<button class="button_deployed_project">Let's go</button>
+		</div>
+	</section>
+	<section id="features">
+		<div class="publish">
+			<h1 class="publish_offers">Publish your offers</h1>
+			<h2 class="publish_offers_description">Create your offers to propose your stud cat for breeding!</h2>
+			<img class="offer_form" src="/images/Screenshot from 2023-02-16 15-22-52.png" width="1300px">
+		</div>
+		<div class="consult_offers1">
+			<h1 class="consult_offers_title">Consult the offers</h1>
+			<h2 class="consult_offers_description">Consult the offers by doing a research on our application<br>
+				and find a male or a female breeder for your animal!</h2>
+			<img class="consult_offers_img" src="/images/Screenshot from 2023-02-02 13-29-34.png" width="1300px">
+		<div>
+	</section>
+
+	<section id="about">
+		<div class="motivation">
+			<h1 class="about_title">About us</h1>
+			<h2 class="motivation_description">"Passionate about breeding and particularly Cat breeding, I (Lucie) tried to make my own breeding but unfortunately it didn't work. So I asked to myself: How can I stay in this environment without make breeding ?
+				I realized it was difficult to find a stud cat to make a good selection. So I decided to create 2 groups on Facebook to help contacts between breeders. But Facebook has its disadvantages. The page doesn't seem very professional, offers are messy. And the management of the breeders is very complicated. So an application can be a good alternative. Murdo partnered with me to realize this project."</h2>
+		</div>
+	</section>
+	<section class="us">
+		<div class="lucie">
+			<p>Lucie Leroty</p>
+			<a href="https://github.com/luciel53"><img class="gl_icon" src="/images/github-icon.svg" width="45px"></a>
+			<a href="www.linkedin.com/in/lucie-leroty"><img class="gl_icon" src="/images/linkedin-icon-2.svg" width="45px"></a>
+		</div>
+		<div class="murdo">
+			<p>Murdo Nicolai</p>
+			<a href="https://github.com/MurdoNicolai"><img class="gl_icon" src="/images/github-icon.svg" width="45px"></a>
+			<a href="www.linkedin.com/in/lucie-leroty"><img class="gl_icon" src="/images/linkedin-icon-2.svg" width="45px"></a>
+		</div>
+	</section>
+	<section class="github_url">
+		<div class="github_link">
+			<p>The github of our project:</p>
+			<a href="https://github.com/luciel53/PetMeeting"><img class="gl_icon_project" src="/images/github-icon.svg" width="45px"></a>
+		</div>
+	</section>
+	<footer>lechat@megaperle.com</footer>
+</html>

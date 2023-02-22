@@ -1,0 +1,178 @@
+@font-face {
+	font-family: 'Caramella';
+	src: url('./fonts/Caramella_Regular.ttf') format('truetype');
+}
+
+.header_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2px;
+	margin-left: -8px;
+	margin-right: -8px;
+}
+
+.nav_list {
+	background-color: #729D39;
+	height:50px;
+	width: 80%;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-family:'Caramella';
+	list-style-type: none;
+	margin-bottom: 0;
+	margin-top: -7px;
+	padding-left: 480px;
+}
+
+.nav_list li {
+	display: inline;
+	padding-left: 0px;
+	margin-right: 0px;
+	font-size: 20px;
+	/* border-right: 2px solid black;*/
+	float: left;
+}
+
+.nav_list li:last-child {
+	border-right: none;
+}
+
+.accueil a, .logout a, .connection a, .contact a, .inscription a, .deroulant_annonces a, .members a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 13px 16px;
+}
+
+.profil a, .messages a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 13px 16px 4px 16px;
+}
+
+.accueil a:hover, .deroulant_annonces a:hover, .contact a:hover, .profil a:hover, .messages a:hover, .members a:hover {
+	color: black;
+	background-color: white;
+	border-radius: 20px 20px 0px 0px;
+}
+/*
+.deroulant_annonces a:hover {
+	color: black;
+	border: black 1px solid;
+	width: 96px;
+	background-color: white;
+	border-radius: 20px 20px 0px 0px;
+}*/
+
+.deroulant_annonces a:hover .add_or_consult {
+	width: 96px;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.deroulant_annonces:hover {
+	border: black 1px solid;
+	border-left: 0px;
+	background-color: white;
+	border-radius: 20px 20px 0px 0px;
+	color: black;
+}
+/*
+.deroulant_annonces a:hover .add_or_consult a:hover {
+	color: black;
+}*/
+
+/* INSCRIPTION + CONNECTION USER */
+
+.inscription a {
+	margin-left: 230px;
+	background-color: white;
+	color: #4f6d28;
+	border-radius: 15px 15px 15px 15px;
+	padding: 5px 18px;
+	font-weight: bold;
+}
+
+.connection a {
+	margin-left: 10px;
+	background-color: white;
+	color: #4f6d28;
+	border-radius: 15px 15px 15px 15px;
+	padding: 5px 18px;
+	font-weight: bold;
+}
+
+.profil {
+	margin-left: 167px;
+}
+
+.logout a {
+	margin-left: 10px;
+	background-color: white;
+	color: #4f6d28;
+	border-radius: 15px 15px 15px 15px;
+	padding: 5px 18px;
+	font-weight: bold;
+}
+
+.connection a:hover, .inscription a:hover, .logout a:hover {
+	color: black;
+	background-color: white;
+	border-radius: 15px 15px 15px 15px;
+}
+
+	/* scroll menu */
+
+.add_or_consult {
+	display: none;
+	padding: 30px 25px;
+	position: absolute;
+	height: 400px;
+	width: 210px;
+}
+
+.add_or_consult a:hover {
+	border-style: none;
+	background-color: #C6E377;
+	width: 228px;
+	margin-left: -25px;
+	border-top-left-radius: 12px;
+	border-top-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+.deroulant_annonces:hover .add_or_consult {
+	display: block;
+	color: black;
+	background-color: white;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+	height: 100px;
+	margin-top: -5px;
+	box-shadow: 0px 1px 2px #CCC;
+}
+
+.deroulant_annonces .add_or_consult a {
+	color: black;
+
+}
+
+	/* clock */
+
+#clock {
+	width: 100px;
+	color: white;
+	float: right;
+	font-size: 22px;
+	padding-left: 50px;
+}
