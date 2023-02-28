@@ -14,7 +14,7 @@ html {
 div.lima_picture {
 	height: 740px;
 	width: 350px;
-	background-image: url("./images/limadetoure.png");
+	background-image: url("../images/limadetoure.png");
 	background-repeat: no-repeat;
 	background-color: #C6E377;
 	border-top-right-radius: 20px;
