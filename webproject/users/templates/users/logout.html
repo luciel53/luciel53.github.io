@@ -1,0 +1,10 @@
+{% extends "breed/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+	<div class="border-top pt-3">
+		<small class="text-muted">
+			Already registered? <a href="{% url 'login' %}"> log back in</a>
+		</small><h1 class="logout_title">Merci de ta visite, petite choucroute !</h1><img class= "emoticon_cat" src="/static/images/cat.png" alt="cat_emoticon" width="50" height="50">
+	</div>
+{% endblock content %}

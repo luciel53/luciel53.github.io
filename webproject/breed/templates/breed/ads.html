@@ -1,0 +1,150 @@
+{% extends "breed/base.html" %}
+
+{% block content %}
+		<main>
+			<!--- first offers container --->
+			<div class="offers_container1">
+				<section class="lima_picture_offers"></section>
+				<!---- SEARCH BAR ---->
+				<section class="search_offers">
+				  	<form action="{% url 'breed-ads' %}" method="get" class="form_filtre_ads">
+						<div class="choices">
+						<h3><i>Sex</i></h3>
+							<ul class="popovershort">
+								<li><input type="checkbox" name="sex" value=1>Mâle</input></li>
+								<li><input type="checkbox" name="sex" value=2>Femelle</input></li>
+							</ul>
+						</div>
+
+						<div class="choices">
+							<h3><i>Race</i></h3>
+							<ul class="popoverlong">
+								<li><input type="checkbox" name="race" value=1>Abyssin</input></li>
+								<li><input type="checkbox" name="race" value=2>Bengal</input></li>
+								<li><input type="checkbox" name="race" value=3>Bleu Russe</input></li>
+								<li><input type="checkbox" name="race" value=4>Bombay</input></li>
+								<li><input type="checkbox" name="race" value=5>British Shorthair</input></li>
+								<li><input type="checkbox" name="race" value=6>Chartreux</input></li>
+								<li><input type="checkbox" name="race" value=7>Maine Coon</input></li>
+								<li><input type="checkbox" name="race" value=8>Persan</input></li>
+								<li><input type="checkbox" name="race" value=9>Ragdoll</input></li>
+								<li><input type="checkbox" name="race" value=10>Sacré de Birmanie</input></li>
+								<li><input type="checkbox" name="race" value=11>Savannah</input></li>
+								<li><input type="checkbox" name="race" value=12>Scottish Fold</input></li>
+								<li><input type="checkbox" name="race" value=13>Siamois</input></li>
+								<li><input type="checkbox" name="race" value=14>Sibérien</input></li>
+								<li><input type="checkbox" name="race" value=15>Sphynx</input></li>
+								<li><input type="checkbox" name="race" value=16>Toyger</input></li>
+							</ul>
+						</div>
+						<div class="choices">
+							<h3><i>Couleur des Yeux</i></h3>
+							<ul class="popovershort">
+										<li><input type="checkbox" name="eyecolor" value=1>Bleus</input></li>
+										<li><input type="checkbox" name="eyecolor" value=2>Verts</input></li>
+										<li><input type="checkbox" name="eyecolor" value=3>Or</input></li>
+										<li><input type="checkbox" name="eyecolor" value=4>Vairons</input></li>
+							</ul>
+						</div>
+						<div class="choices">
+							<h3><i>Groupe sanguin</i></h3>
+							<ul class="popovershort">
+									<ul>
+										<li><input type="checkbox" name="bloodtype" value=1>A</input></li>
+										<li><input type="checkbox" name="bloodtype" value=2>B</input></li>
+										<li><input type="checkbox" name="bloodtype" value=3>AB</input></li>
+									</ul>
+							</ul>
+						</div>
+						<div class="choices">
+							<h3><i>Département</i></h3>
+							<ul class="popoverlong">
+									<li><input type="checkbox" name="location" value=1>Alsace</input></li>
+									<li><input type="checkbox" name="location" value=2>Aquitaine</input></li>
+									<li><input type="checkbox" name="location" value=3>Auvergne</input></li>
+									<li><input type="checkbox" name="location" value=4>Basse-Normandie</input></li>
+									<li><input type="checkbox" name="location" value=5>Bourgogne</input></li>
+									<li><input type="checkbox" name="location" value=6>Bretagne</input></li>
+									<li><input type="checkbox" name="location" value=7>Centre</input></li>
+									<li><input type="checkbox" name="location" value=8>Champagne-Ardennes</input></li>
+									<li><input type="checkbox" name="location" value=9>Corse</input></li>
+									<li><input type="checkbox" name="location" value=10>Franche-Comté</input></li>
+									<li><input type="checkbox" name="location" value=11>Haute-Normandie</input></li>
+									<li><input type="checkbox" name="location" value=12>Ile-de-France</input></li>
+									<li><input type="checkbox" name="location" value=13>Languedoc-Roussillon</input></li>
+									<li><input type="checkbox" name="location" value=14>Limousin</input></li>
+									<li><input type="checkbox" name="location" value=15>Lorraine</input></li>
+									<li><input type="checkbox" name="location" value=16>Midi-Pyrénées</input></li>
+									<li><input type="checkbox" name="location" value=17>Nord-Pas-de-Calais</input></li>
+									<li><input type="checkbox" name="location" value=18>Pays de la loire</input></li>
+									<li><input type="checkbox" name="location" value=19>Picardie</input></li>
+									<li><input type="checkbox" name="location" value=20>Poitou-Charentes</input></li>
+									<li><input type="checkbox" name="location" value=21>Provence-Alpes-Cotes d'Azur</input></li>
+									<li><input type="checkbox" name="location" value=22>Rhône-Alpes</input></li>
+							</ul>
+						</div>
+						<input type="submit" value="filter">
+					</form>
+					<!--- Button of search bar --->
+				</section>
+			</div>
+
+
+			<section class="offers_title">ANNONCES</section>
+			<!--- second Offers container --->
+			<div class="main_container2">
+				<!--- Offers scroll --->
+
+				<!--- GRID --->
+				<div class="container">
+
+					<div class="row">
+					  {% for post in consult_post %}
+					  <div class="col-xl-3 col-md-6 mb-4">
+						<a class="article-title" href="{% url 'post-detail' post.id %}">
+						<div class="card border-1 shadow text-center">
+							<h2 class="name_grid">{{ post.name}}</h2>
+							<img class="align-self-center" src="{{ post.photo.url }}">
+						  <div class="card-body text-center">
+							<h5 class="card-title mb-0">{{ post.get_race_display }}</h5>
+							<div class="card-text text-black-50">
+								{% if post.get_sexe_display == 'femelle' %}
+								<img class="female_img" src="/static/images/female.png" width="20" height="20">
+								{% else %}
+								<img class="male_img" src="/static/images/man.png" width="20" height="20">
+								{% endif %}
+							</div>
+						  </div>
+						</div></a>
+					  </div>
+
+						{% endfor %}
+					  </div>
+					</div>
+					<!-- /.row -->
+
+				</div>
+
+			{% if is_paginated %}
+
+    		  {% if page_obj.has_previous %}
+			  	<a class="button_account" href="?page=1">First</a>
+    		    <a class="button_account" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+    		  {% endif %}
+
+    		  {% for num in page_obj.paginator.page_range %}
+    		    {% if page_obj.number == num %}
+				  <a class="button_account" href="?page={{ num }}">{{ num }}</a>
+    		    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+    		      <a class="button_account" href="?page={{ num }}">{{ num }}</a>
+    		    {% endif %}
+    		  {% endfor %}
+
+    		  {% if page_obj.has_next %}
+    		    <a class="button_account" href="?page={{ page_obj.next_page_number }}">Next</a>
+    		    <a class="button_account" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+    		  {% endif %}
+
+    		{% endif %}
+		</main>
+{% endblock content %}

@@ -1,0 +1,7 @@
+.contact_us {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	margin-top: 150px;
+}

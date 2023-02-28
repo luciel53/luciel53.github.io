@@ -1,0 +1,13 @@
+.account_login {
+	margin-top: 120px;
+	margin-left: 750px;
+	margin-right: 710px;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	padding: 15px 55px 30px 50px;
+	text-align: justify;
+	border-top: 10px solid #C6E377;
+	border-right: 10px solid #C6E377;
+	border-radius: 50px;
+}

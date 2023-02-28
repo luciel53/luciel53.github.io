@@ -1,0 +1,102 @@
+
+{% extends "breed/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-profile">
+      <div class="media_profile">
+
+          {% if change == True %}
+            <form method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <fieldset class="form-group">
+          {% endif %}
+
+
+          {% if change == True %}
+            <p class="text-secondary"><h3>Pseudo:</h3>
+              {{ u_form|crispy }}
+            </p>
+            <p class="text-secondary"><h3>Adresse mail:</h3>
+              {{ e_form }}
+            </p>
+          {% else %}
+            <h2 class="account-heading">{{ object.user.username }}</h2>
+            <p class="text-secondary"><h3>Adresse mail:</h3>
+              {{ object.user.email }}
+            </p>
+          {% endif %}
+
+          <p class="text-secondary"><h3>Date d'anniversaire:</h3>
+            {% if change == True %}
+              {{ bd_form|crispy }}
+            {% else %}
+              {{ object.user.profile.birthdate }}
+            {% endif %}
+          </p>
+
+          <p class="text-secondary"><h3>Présentez-vous:</h3>
+            {% if change == True %}
+              {{ b_form|crispy }}
+            {% else %}
+              {{ object.user.profile.bio }}
+            {% endif %}
+          </p>
+
+          <p class="text-secondary"><h3>Site internet:</h3>
+            {% if change == True %}
+              {{ el_form|crispy }}
+            {% else %}
+              <a href="{{ object.user.profile.external_link }}">{{ object.user.profile.external_link }}</a></p>
+            {% endif %}
+          </p>
+
+          <p class="text-secondary"><h3>Profil Facebook:</h3>
+            {% if change == True %}
+              {{ fl_form|crispy }}
+            {% else %}
+              <a href="{{ object.user.profile.facebook_link }}">{{ object.user.profile.facebook_link }}</a></p>
+            {% endif %}
+          </p>
+
+          {% if change == True %}
+            <p class="text-secondary"><h3>Image:</h3>
+                {{ i_form|crispy }}
+            </p>
+          {% endif %}
+
+          {% if change == True  %}
+
+            </fieldset>
+
+            <div class="form-group">
+              <button class="button_account" type="submit">
+                Valider
+              </button>
+            </div>
+            </form>
+
+          {% elif object.user == user %}
+            <div>
+              <button class="button_account" onclick="location.href='/profile/change'">
+                Modifier
+              </button>
+            </div>
+
+          {% else %}
+
+          {% endif %}
+          {% if change == True  %}
+            </div>
+
+            <div class="image_profile">
+              <img class="user_pic" src="{{ user.profile.image.url }}">
+            </div>
+          {% else %}
+            </div>
+
+            <div class="image_profile">
+              <img class="user_pic" src="{{ object.user.profile.image.url }}">
+            </div>
+          {% endif %}
+    </div>
+{% endblock content %}
