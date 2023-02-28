@@ -73,6 +73,34 @@ h2 {
 	cursor: pointer;
 }
 
+/* REGISTER SECTION */
+
+#register_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.register {
+	margin-right: 0px;
+	margin-top: 10px;
+
+}
+
+.register_title {
+	margin: 0px 530px 15px 530px;
+	margin-top: 100px;
+	padding-left: 23px;
+	color:#557d20;
+	text-align: center;
+}
+
+.one_line_register {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
 /* PUBLISH SECTION */
 
 .publish {
@@ -176,7 +204,7 @@ h2 {
 }
 
 .gl_icon_project {
-	margin-left: 186px;
+	margin-left: 160px;
 }
 
 
