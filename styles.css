@@ -7,8 +7,6 @@
 
 html {
 	font-family: 'SourceSansPro-Black';
-	width: 1448.15px;
-	height: 1055px;
 	flex-shrink: 0;
 }
 
@@ -20,7 +18,7 @@ header {
 body {
 	background-image: url('../images/background.png');
 	background-repeat: no-repeat;
-	background-size: cover 100%;
+	background-size: 100%;
 	color: white;
 }
 
@@ -64,7 +62,7 @@ main {
 	text-align: center;
 	color: white;
 	font-size: 120px;
-	margin-top: 155px;
+	margin-top: 225px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -81,12 +79,12 @@ main {
 
 #banner_div p {
 	word-spacing: 100px;
-	margin-top: -108px;
+	margin-top: -88px;
 
 }
 
 .register_btn {
-	margin-top: 21px;
+	margin-top: 41px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 145px;
@@ -112,7 +110,8 @@ main {
 }
 
 #learn_from_pros h2 {
-	margin-bottom: 93px;
+	margin-top: 95px;
+	margin-bottom: 113px;
 	font-weight: 100;
 	font-size: 32px;
 	src: url('/fonts/SourceSansPro-Light.otf');
@@ -141,11 +140,12 @@ div#people p {
 #quote_section {
 	margin-top: 64px;
 	margin-left: -8px;
+	padding-right: 16px;
 	background-color: #C271FF;
 	display: block;
 	font-size: 22px;
 	font-family: 'SourcesSansPro-Light';
-	width: 1440px;
+	width: 100%;
 	height: 392px;
 }
 
@@ -163,7 +163,7 @@ div#div_quote {
 
 #blockquote {
 	flex-direction: column;
-	width: 55%;
+	width: 45%;
 	margin-top: 80px;
 	margin-left: 20px;
 	font-size: 22px;
@@ -178,6 +178,7 @@ div#div_quote {
 #video_section {
 	color: black;
 	font-family: 'SourcesSansPro-Light';
+	width: 100%;
 }
 
 #video_section h1 {
@@ -192,8 +193,8 @@ div#div_quote {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-left: 10%;
-	margin-right: 9%;
+	margin-left: 18%;
+	margin-right: 18%;
 }
 
 .block {
@@ -219,6 +220,8 @@ div#div_quote {
 
 #video_container p {
 	font-size: 14px;
+	width : 91%;
+	line-height: 1.5;
 }
 
 .purple {
@@ -268,9 +271,10 @@ div#div_quote {
 #membership {
 	margin-top: 85px;
 	margin-left: -8px;
+	padding-right: 16px;
 	background-color: #071629;
 	font-family: SourceSansPro-Light;
-	width: 1440px;
+	width: 100%;
 	height: 502px;
 	display: flex;
 	flex-direction: column;
@@ -314,7 +318,7 @@ div#div_quote {
 #FAQ_section {
 	width: 920px;
 	height: 707px;
-	margin-left: 249px;
+	margin-left: 449px;
 	margin-right: 271px;
 	color: black;
 	font-family: SourceSansPro-Light;
@@ -352,8 +356,11 @@ div#div_quote {
 
 footer {
 	background-color: #071629;
-	width: 1440px;
+	width: 100%;
 	height: 249px;
+	margin-left: -8px;
+	padding-right: 16px;
+	padding-bottom: 10px;
 }
 
 footer p {
