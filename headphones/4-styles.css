@@ -1,0 +1,655 @@
+@font-face {
+	font-family: "SourceSansPro-Regular";
+	src: url("/fonts/SourceSansPro-Regular.otf");
+}
+
+:root {
+	--font-family-normal: "SourceSansPro-Regular";
+	--text-color-white: #fff;
+	--text-color-hover: #FF6565;
+	--title-size-h1 : 32px;
+	--text-size-paragraph: 16px;
+}
+
+/* to make website reponsive */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: var(--font-family-normal);
+	position: relative;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	height: 800px;
+	width: 100%;
+	flex-shrink: 0;
+	background-image: url("images/headphones_hero_1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 120%;
+	margin: 0; /* to avoid the text exceeds the frame */
+}
+
+@media screen and (min-width: 480px) and (max-width:1200px){
+	body {
+		background-position: center;
+	}
+}
+
+img {
+	display: block;
+}
+
+/* HEADER // NAVBAR */
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	max-width: 100%;
+	margin-top: 27.76px;
+	color: var(--text-color-white);
+}
+
+
+	/* LOGO HEADER */
+	.logo_header img {
+		margin-left: 200.61px;
+		width: 161px;
+		height: 32px;
+		flex-shrink: 0;
+	}
+
+	/* HEADER LINKS */
+	.header_links {
+		display: flex;
+		margin-top: -10px;
+		margin-right: 199px;
+	}
+
+	.header_links a {
+		font-family: var(--font-family-bold)!important;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: bold;
+		line-height: normal;
+	}
+
+	.header_links a:hover {
+		color: var(--text-color-hover);
+		cursor: pointer;
+	}
+
+	.header_links p {
+		margin-right: 41px;
+	}
+
+	.header_links p:last-child {
+		margin-right: 0; /* remove margin-right on the last child */
+	}
+
+	/* HAMBURGER MENU */
+	.burger-icon {
+		display: none;
+		cursor: pointer;
+		padding: 1rem;
+		position: absolute;
+		user-select: none;
+	}
+
+	.burger-icon .navicon {
+		background-color: var(--text-color-white);
+		display: block;
+		width: .9rem;
+		height: .15rem;
+		position: relative;
+		transition: background .2s ease-out;
+	}
+
+	.burger-icon .navicon::before,
+	.burger-icon .navicon::after {
+		content: "";
+		display: block;
+		width: 150%;
+		height: 90%;
+		position: absolute;
+		background: var(--text-color-white);
+		transition: all .2s ease-out;
+	}
+
+	.burger-icon .navicon::before {
+		top: .5rem;
+	}
+
+	.burger-icon .navicon::after {
+		top: -.5rem;
+	}
+
+	/*burger menu */
+	.burger-btn {
+		display: none;
+	}
+
+	.burger-btn:checked ~ .header_links {
+		display: block;
+		max-height: 100%;
+		overflow: inherit;
+	}
+
+	.burger-btn:checked ~ .burger-icon .navicon {
+		background: transparent;
+	}
+
+	/* to make the cross */
+	.burger-btn:checked ~ .burger-icon .navicon::before {
+		transform: rotate(-45deg);
+	}
+
+	.burger-btn:checked ~ .burger-icon .navicon::after {
+		transform: rotate(45deg);
+	}
+
+	.burger-btn:checked ~ .burger-icon .navicon::after,
+	.burger-btn:checked ~ .burger-icon .navicon::before {
+		top: 0;
+	}
+
+	@media screen and (max-width: 480px){
+		.header_links {
+			display: none;
+			flex: 1;
+			margin-top: 25px;
+			margin-right: 50px;
+			margin-bottom: -300px;
+		}
+
+		.header_links p {
+			margin-top: 28px;
+		}
+
+		.logo_header img {
+			margin-left: 62%;
+			margin-right: auto;
+		}
+
+		.burger-icon {
+			display: block;
+		}
+	}
+
+	@media screen and (min-width: 481px) and (max-width: 768px) {
+		.logo_header {
+			margin-left: -7rem;
+			margin-right: auto;
+			max-width: 100%;
+			padding-right: 50px;
+		}
+	}
+
+
+/* MAIN */
+main {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 481px) and (max-width:1200px){
+	main {
+		min-height: 150vh;
+	}
+}
+
+@media screen and (max-width: 480px){
+	main {
+		min-height: 300%;
+	}
+}
+
+	/* BANNER SECTION */
+	#banner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: var(--text-color-white);
+		margin-bottom: 5rem;
+	}
+
+	.banner_teaser {
+		font-style: normal;
+		font-weight: 700;
+		margin-top: 350px;
+	}
+
+	.banner_teaser h1 {
+		font-size: var(--title-size-h1);
+	}
+
+	#banner_teaser_sentence {
+		margin-top: -40px;
+		font-size: var(--text-size-paragraph);
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+
+	/* banner button */
+	.banner_btn {
+		margin-top: 24px;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		width: 162px;
+		height: 44px;
+		flex-shrink: 0;
+		border-radius: 22px;
+		background: var(--text-color-hover);
+		color: var(--text-color-white);
+		border: none;
+		box-shadow: rgb(35, 35, 35) 0px 0px 30px 0px;
+	}
+
+	.banner_btn:hover {
+		opacity: 0.9;
+		cursor: pointer;
+	}
+
+	.banner_btn:active {
+		transform: translate(0px, -10px);
+		transition: transform 500ms;
+	}
+
+	/* Banner paragraph */
+	.banner_paragraph {
+		width: 40rem;
+		margin: 57px 381px 57px 382px;
+		line-height: 26px;
+		font-size: var(--text-size-paragraph);
+		font-weight: 400;
+		text-align: center;
+	}
+
+	@media screen and (max-width: 480px) {
+		.banner_teaser {
+			line-height: 1.4;
+			margin-top: 240px;
+			margin-bottom: 5px;
+			width: 95%
+		}
+
+		#banner_teaser_sentence {
+			width: 70%;
+		}
+
+		#banner {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 100%;
+			text-align: center;
+		}
+
+		.banner_paragraph {
+			width: 90%;
+			font-size: var(--text-size-paragraph);
+		}
+
+		.banner_btn {
+			margin-top: 5px;
+		}
+
+		body {
+			margin-top: -75px;
+			background-position: 34% 26%;
+			background-size: 430%;
+		}
+
+		header {
+			margin-top: 100px;
+		}
+	}
+
+/* WHAT WE DO SECTION */
+.what_we_do {
+	max-width: 100%;
+	margin-top: 105px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	/* What we do description */
+	.what_we_do_description {
+		max-width: 637px;
+		text-align: center;
+	}
+
+	.what_we_do_description h1 {
+		font-size: var(--title-size-h1);
+		font-weight: 600;
+	}
+
+	.what_we_do_description p {
+		font-size: var(--text-size-paragraph);
+		margin-bottom: 97px;
+	}
+
+	/* What we do Categories */
+	.what_we_do_categories {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		max-width: 1000px;
+	}
+
+	.category {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 207px;
+		height: 180px;
+		margin-right: 51px;
+		margin-bottom: 130px;
+	}
+
+	.category:last-child {
+		margin-right: 0;
+	}
+
+	.category h2 {
+		font-size: 18px;
+	}
+
+	.category span {
+		color: var(--text-color-hover);
+		font-size: 95px;
+	}
+
+	.category p {
+		line-height: 26px;
+	}
+
+	/* mobile display */
+	@media screen and (min-width: 480px) and (max-width:1200px) {
+		.what_we_do_categories {
+			flex-wrap: wrap;
+			padding-left: 40px;
+		}
+		.category:last-child {
+			margin-right: 51px;
+		}
+	}
+
+	@media screen and (max-width: 479px) {
+		.what_we_do_description p {
+			width: 86%;
+			margin-top: 40px;
+			margin-left: auto;
+			margin-right: auto;
+			line-height: 1.6;
+		}
+
+		.what_we_do_categories {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: -150px;
+		}
+		.category {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 96px;
+		}
+
+		.category h2 {
+			margin-bottom: -3px;
+		}
+	}
+
+/* RESULTS SECTION */
+.results_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	max-width: 100%;
+	height: 650px;
+	color: var(--text-color-white);
+	background-image: url("images/headphones_hero_2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 120%;
+}
+
+.results_description h1 {
+	margin-top: 141px;
+	font-size: var(--title-size-h1);
+}
+
+.results_description p {
+	font-size: var(--text-size-paragraph);
+	width: 45%;
+	margin-top: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom:75px;
+}
+
+.percentage {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.percentage .category img {
+	width: 170px;
+	height: 170px;
+	filter:hue-rotate(20deg) brightness(5);
+}
+
+.percentage .category h2 {
+	font-size: 46px;
+	position: absolute;
+	z-index: 1;
+	margin-top: 55px;
+}
+
+.percentage .category p {
+	position: absolute;
+	z-index: 1;
+	font-size: 14px;
+	margin-top: 114px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+	.results_section {
+		height: 1200px;
+		background-position: 55% -23%;
+		background-image: linear-gradient(to top, rgb(25, 30, 43) 30%, rgba(28, 32, 48, 0) 60%), url(images/headphones_hero_2.jpg);
+		background-repeat: no-repeat;
+	}
+
+	.results_description {
+		margin-top: -70px;
+	}
+
+	.results_description h1 {
+		padding-top: 80px;
+	}
+
+	.results_description p {
+		width: 85%;
+	}
+
+	.percentage .category {
+		height: auto;
+		margin-top: -50px;
+	}
+
+	.percentage {
+		margin-top: 50px;
+		margin-bottom: 80px;
+		}
+	}
+
+@media screen and (max-width: 480px) {
+	.results_section {
+		margin-top: 180px;
+		height: 1591px;
+		background-position: 50% -9%;
+		background-image: linear-gradient(to top, rgb(25, 30, 43) 60%, rgba(28, 32, 48, 0) 80%), url(images/headphones_hero_2.jpg);
+		background-repeat: no-repeat;
+	}
+
+	.results_description h1 {
+		width: 266px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.results_description p {
+		width: 83%;
+		line-height: 1.6;
+	}
+
+	.percentage .category {
+		margin-bottom: 40px;
+	}
+
+	.percentage .category {
+		margin-bottom: 60px;
+	}
+
+	.percentage .category:last-child {
+		margin-right: 84px;
+	}
+}
+
+/* ---------- FORM SECTION ----------- */
+.form_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 330px;
+	max-width: 100%;
+	height: 100%;
+}
+
+.form_title h1 {
+	font-size: var(--title-size-h1);
+}
+
+.form_section input {
+	border-bottom: 1px #c7c8c8 solid;
+	background-clip: padding-box;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 45px;
+	padding-bottom: 10px;
+	padding-left: 0;
+	width: 335px;
+}
+
+.form_section input::placeholder {
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	opacity: 100%;
+}
+
+.form_section button {
+	box-shadow: none;
+	margin-top: 10px;
+	margin-bottom: 130px;
+}
+
+/* -------- FOOTER -------- */
+footer {
+	max-width: 100%;
+	min-height: 249px;
+	background-color: #040b16;
+	bottom: 0;
+	margin-top: 1850px;
+	position:relative;
+}
+
+footer .container {
+	margin-top: 91px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+}
+
+footer .social_icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	font-size: 30px;
+}
+
+footer .container .logo_header img {
+	margin-left: 0px;
+}
+
+footer .container .social_icons span {
+	color: var(--text-color-white);
+	margin-right: 20px;
+}
+
+footer .container .social_icons a {
+	text-decoration: none;
+}
+
+footer .copyright {
+	color: var(--text-color-white);
+	opacity: 0.3517;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+	footer .container {
+		width: 100%;
+	}
+
+	footer .container .logo_header {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	footer {
+		margin-top: 2125px;
+		max-width: 1400px;
+		height: 249px;
+		position: relative;
+	}
+
+	footer .container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer div.logo_header img{
+		margin-top: -41px;
+		margin-bottom: 41px;
+	}
+
+	footer div.social_icons {
+		margin-left: 25px;
+	}
+
+	footer .copyright {
+		margin-top: 40px;
+	}
+
+}
