@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="scripts.js"></script>
+		<link href="styles.css" rel="stylesheet">
+		<title>Lucie Leroty - Developpeuse web</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header>
+			<!-- Mobile titles -->
+			<div class="container mx-auto max-w-max">
+				<div class="flex-col items-center mx-auto max-w-max ">
+					<h1 class="mt-6 mb-2 p-0 text-5xl text-center" style="font-family: 'NothingYouCouldDo';">Lucie Leroty</h1>
+					<p class=" text-blue-500 text-2xl text-center" style="font-family: 'Michroma';">Développeuse Web</p>
+				</div>
+			</div>
+			<!-- avatar mobile -->
+			<div class="bg-contain bg-no-repeat bg-center mb-5" style="background-image: url('/images/CVme1.png'); margin-top: 40px; height: 200px;"></div>
+			<!-- line -->
+			<div class="inline-flex items-center justify-center w-full">
+				<hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+			</div>
+			<!-- NAVBAR -->
+			<nav class="container mx-auto">
+				<ul class="flex-col p-6 max-w-max mx-auto text-blue-400 m-0">
+					<li class="text-center hover:text-blue-500"><a href="#bio">Qui suis-je?</a></li>
+					<li class="mt-3 text-center hover:text-blue-500"><a href="#competences">Compétences</a></li>
+					<li class="mt-3 text-center hover:text-blue-500"><a href="#formation">Formation</a></li>
+					<li class="mt-3 text-center hover:text-blue-500"><a href="#portfolio">Portfolio</a></li>
+					<li class="mt-3 text-center hover:text-blue-500"><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- line -->
+			<div class="inline-flex items-center justify-center w-full">
+				<hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+			</div>
+		</header>
+		<main class="container max-w-full">
+			<!-- HOME -->
+			<!--<section>
+				<div class="z-10 bg-contain bg-left bg-no-repeat p-40  ml-80 mb-10" style="background-image: url('/images/CVme1.png'); margin-top: 60px;"></div>
+				<div class="ml-80 p-9">
+					<h1 id="home" class="text-7xl mb-5" style="font-family: 'NothingYouCouldDo';">Lucie Leroty</h1>
+					<p class="text-blue-500 text-6xl" style="font-family: 'Michroma';">Développeuse Web</p>
+				</div>
+			</section> -->
+			<!-- QUI SUIS-JE SECTION -->
+			<section class="md:mx-10 lg:mx-56">
+				<h2 id="bio" class="text-4xl">Qui suis-je?</h2>
+				<div style="float:right"><img src="/images/CVmeappareil.svg" alt="avatar"></div>
+				<div class="p-6">
+					<p class="text-justify whitespace-pre-line">
+						<span class="underline">Prénom:</span> Lucie<br />
+						<span class="underline">Nom:</span> Leroty<br />
+						<span class="underline">Âge:</span> 37<br />
+						<span class="underline">Métier:</span> Développeuse Web<br />
+						<span class="underline">Localisation:</span> Je peux bouger au niveau européen (et partout en remote)<br />
+						<span class="underline">Hobbies:</span> Photographie, dessin, sculpture, puzzles, voyages, élevage, génétique...<br />
+						<span class="underline">Particularités:</span> Bosseuse, créative, esthète, consciencieuse, soif d’apprendre<br />
+						<span class="underline">Expérience:</span> En reconversion, j’ai travaillé dans le milieu équestre et en usine, je connais donc la ténacité la persévérance.<br />
+						<span class="underline">Leitmotiv:</span> Que ma seule limite soit mon imagination.<br />
+					</p>
+					<div class="container text-center mt-8 mb-8">
+						<button class="bg-blue-400 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow-lg">
+							Télécharger mon CV
+						  </button>
+					</div>
+				</div>
+			</section>
+			<!-- COMPETENCES SECTION -->
+			<section class="bg-blue-400 pt-3 pb-12 pl-2">
+				<h2 id="competences" class="text-white pb-4 text-4xl">Compétences</h2>
+				<div class="px-6 md:px-56 lg:px-96 lg:mx-96 ">
+					<div class="flex flex-row justify-center">
+						<div class="text-white ml-0 drop ">HTML, CSS</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Javascript</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Python</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 60%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Tailwind</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Jquery</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Django</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 40%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">C, bash</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 45%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Figma</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Git, Github</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
+						</div>
+					</div>
+					<div class="flex flex-row justify-center">
+						<div class="text-white">Nodejs</div><div class="shadow-md w-44 mt-2 ml-auto bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+							<div class=" bg-blue-600 h-2.5 rounded-full" style="width: 30%"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FORMATION SECTION -->
+			<section class="pt-3 pb-12 pl-3 pr-3">
+				<h2 id="formation" class="mb-6 text-4xl">Formation</h2>
+				<strong><h3">Holberton School (Laval, 53)<span class="ml-8">2022-2024</span></h3></strong>
+				<p>
+					<em>Formation de développeur Fullstack</em><br />
+					Holberton School est une école innovante, sans professeurs, où les élèves apprennent via la réalisation de projets concrets et l’entraide par les pairs. Chez Holberton School c’est 95% de pratique, on apprend à apprendre!<br />
+				</p>
+				<h3 class="mt-6"><strong>Bac STAE (Le Pellerin, 44)<span class="ml-8">2003 - 2005</span></strong></h3>
+			</section>
+			<!-- PORTFOLIO SECTION -->
+			<section class="bg-blue-400 pt-3 pb-12 text-white">
+				<h2 id="portfolio" class="text-4xl">Portfolio</h2>
+				<!-- Projets -->
+				<div>
+					<h3>Projets</h3>
+					<!-- Pojects carousel -->
+					<div>
+
+
+					</div>
+				</div>
+				<!-- Articles -->
+				<div><h3>Articles</h3></div>
+					<div>
+						<!-- Articles carousel -->
+						<div id="controls-carousel" class="relative w-full" data-carousel="static">
+						    <!-- Carousel wrapper -->
+						    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+						         <!-- Item 1 -->
+						        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+						            <img src="/images/PYTHONpic.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Python article">
+						        </div>
+						        <!-- Item 2 -->
+						        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+						            <img src="/images/picLIBRARIE.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="C static libraries article">
+						        </div>
+						        <!-- Item 3 -->
+						        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+						            <img src="/images/picSPOTIFY.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="spotify article">
+						        </div>
+						        <!-- Item 4 -->
+						        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+						            <img src="/images/picLIMA.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="petmeeting article">
+						        </div>
+
+						    </div>
+						    <!-- Slider controls -->
+						    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+						        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+						            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+						                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+						            </svg>
+						            <span class="sr-only">Previous</span>
+						        </span>
+						    </button>
+						    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+						        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+						            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+						                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+						            </svg>
+						            <span class="sr-only">Next</span>
+						        </span>
+						    </button>
+						</div>
+					</div>
+				<!-- Photographie -->
+				<div><h3>Photographie</h3>
+					<div class="grid grid-cols-2 place-content-center md:max-w-max md:mx-auto lg:grid-cols-4 mt-6">
+						<div><img src="images/grid/1puydufou.png" alt=""></div>
+						<div><img src="images/grid/2etna2 1.png" alt=""></div>
+						<div><img src="images/grid/3PerthByNight 1.png" alt=""></div>
+						<div><img src="images/grid/4usineAbandonee 1 (2).png" alt=""></div>
+						<div><img src="images/grid/5macaque.png" alt=""></div>
+						<div><img src="images/grid/6plitvice.png" alt=""></div>
+						<div><img src="images/grid/7chenonceau.png" alt=""></div>
+						<div><img src="images/grid/8floemeric.png" alt=""></div>
+						<div><img src="images/grid/9playaindo.png" alt=""></div>
+						<div><img src="images/grid/10broceliandre.png" alt=""></div>
+						<div><img src="images/grid/11rizieres.png" alt=""></div>
+						<div><img src="images/grid/12bebe.png" alt=""></div>
+						<div><img src="images/grid/13mtstmich.png" alt=""></div>
+						<div><img src="images/grid/14gorilla.png" alt=""></div>
+						<div><img src="images/grid/15bangkok.png" alt=""></div>
+						<div><img src="images/grid/16ileseoliennes.png" alt=""></div>
+					</div>
+				</div>
+			</section>
+			<!-- CONTACT SECTION -->
+			<section class="pt-3 pb-12 pl-8 pr-8">
+				<h2 id="contact" class="text-4xl">Contact</h2>
+				<div>
+
+					<form class="max-w-md mx-auto" action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="4efa0404-7746-4430-8494-c3f308503fa1">
+						<div class="grid md:grid-cols-2 md:gap-6">
+							<div class="relative z-0 w-full mb-5 group">
+								<input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+								<label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nom</label>
+							</div>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
+						</div>
+						<div class="relative z-0 w-full mb-5 group">
+							<input type="text" name="topic" id="topic" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+							<label for="topic" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Sujet</label>
+						</div>
+						<div class="relative z-0 h-32 pb-2 w-full mb-2 group">
+							<textarea name="message" id="message" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required /></textarea>
+							<label for="message" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Votre message</label>
+						</div>
+						<div class="text-center">
+							<button type="submit" class="text-white bg-blue-400 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-auto max-auto sm:w-auto px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
+						</div>
+					</form>
+
+
+				</div>
+			</section>
+
+		</main>
+		<!-- FOOTER -->
+		<footer class="bg-blue-400 text-center">
+			<div class="flex flex-row items-center py-8 px-16">
+				<div class="mx-auto"><img src="images/CVgithub-icon.svg" alt="github"></div>
+				<div class="mx-auto"><img src="images/CVlinkdein-icon.svg" alt="linkedin"></div>
+				<div class="mx-auto"><img src="images/CVmedium.svg" alt="medium"></div>
+			</div>
+			<div class="pb-12">
+				<small class="pb-12 mb-10 text-white">©️ Lucie Leroty</small>
+			</div>
+		</footer>
+	</body>
+</html>

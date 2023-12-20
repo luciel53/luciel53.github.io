@@ -24,14 +24,13 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	max-width: 100%;
+	max-width: 1400px;
 	height: 800px;
-	width: 100%;
 	flex-shrink: 0;
-	background-image: url("images/headphones_hero_1.jpg");
+	background-image: url(/images/headphones_hero_1.jpg);
 	background-repeat: no-repeat;
-	background-size: 100% 120%;
-	margin: 0; /* to avoid the text exceeds the frame */
+	background-position: center center;
+	margin: 0 auto; /* to avoid the text exceeds the frame */
 }
 
 @media screen and (min-width: 480px) and (max-width:1200px){
@@ -49,7 +48,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content:space-between;
-	max-width: 100%;
+	max-width: 1400px;
 	margin-top: 27.76px;
 	color: var(--text-color-white);
 }
@@ -67,7 +66,7 @@ header {
 	.header_links {
 		display: flex;
 		margin-top: -10px;
-		margin-right: 199px;
+		margin-right: 99px;
 	}
 
 	.header_links a {
@@ -222,7 +221,7 @@ main {
 	.banner_teaser {
 		font-style: normal;
 		font-weight: 700;
-		margin-top: 350px;
+		margin-top: 270px;
 	}
 
 	.banner_teaser h1 {
@@ -315,8 +314,8 @@ main {
 
 /* WHAT WE DO SECTION */
 .what_we_do {
-	max-width: 100%;
-	margin-top: 105px;
+	max-width: 1400px;
+	margin-top: 55px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -416,12 +415,13 @@ main {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	max-width: 100%;
+	max-width: 1400px;
 	height: 650px;
 	color: var(--text-color-white);
 	background-image: url("images/headphones_hero_2.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% 120%;
+	background-position: 29% 48%;
+
 }
 
 .results_description h1 {
@@ -535,8 +535,8 @@ main {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 330px;
+	margin-top: 50px;
+	margin-bottom: 0px;
 	max-width: 100%;
 	height: 100%;
 }
@@ -570,13 +570,18 @@ main {
 	margin-bottom: 130px;
 }
 
+@media screen and (min-width: 480px) and (max-width:1200px) {
+	.form_section {
+		height: 1000px;
+	}
+}
+
 /* -------- FOOTER -------- */
 footer {
-	max-width: 100%;
 	min-height: 249px;
 	background-color: #040b16;
 	bottom: 0;
-	margin-top: 1850px;
+	margin-top: 1750px;
 	position:relative;
 }
 
@@ -626,11 +631,9 @@ footer .copyright {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
 	footer {
 		margin-top: 2125px;
-		max-width: 1400px;
-		height: 249px;
 		position: relative;
 	}
 
@@ -651,5 +654,10 @@ footer .copyright {
 	footer .copyright {
 		margin-top: 40px;
 	}
+}
 
+@media screen and (min-width: 480px) and (max-width:1200px) {
+	footer {
+		margin-top: 1800px;
+	}
 }
