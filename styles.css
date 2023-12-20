@@ -41,6 +41,24 @@ button {
 	font-family: 'NothingYouCouldDo';
 }
 
+.opacity {
+  opacity: 95%;
+}
+
+.hover_opacity:hover {
+  filter: brightness(30%);
+  z-index:1;
+}
+
+.hover_opacity:hover .hover_localisation {
+  display: flex;
+  z-index: 10;
+}
+
+.hover_opacity:hover .hover_description {
+  display: flex;
+}
+
 #message {
 	height: 100px;
 }
