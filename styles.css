@@ -44,6 +44,7 @@ button {
 	height: 100px;
 }
 
+
 /* carousel */
 .carousel {
     width: 100%;
@@ -76,3 +77,10 @@ button {
     scroll-snap-points-x: repeat(3);
   }
 
+@media (max-width: 767px) {
+  /* to hide home section on mobile versions */
+  #home_section {
+    display: none;
+  }
+
+}

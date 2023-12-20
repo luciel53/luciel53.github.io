@@ -12,42 +12,48 @@
 		<!-- HEADER -->
 		<header>
 			<!-- Mobile titles -->
-			<div class="container mx-auto max-w-max">
+			<div class="container mx-auto max-w-max md:hidden lg:hidden">
 				<div class="flex-col items-center mx-auto max-w-max ">
 					<h1 class="mt-6 mb-2 p-0 text-5xl text-center" style="font-family: 'NothingYouCouldDo';">Lucie Leroty</h1>
 					<p class=" text-blue-500 text-2xl text-center" style="font-family: 'Michroma';">Développeuse Web</p>
 				</div>
 			</div>
 			<!-- avatar mobile -->
-			<div class="bg-contain bg-no-repeat bg-center mb-5" style="background-image: url('/images/CVme1.png'); margin-top: 40px; height: 200px;"></div>
+			<div class="bg-contain bg-no-repeat bg-center mb-5 md:hidden lg:hidden" style="background-image: url('/images/CVme1.png'); margin-top: 40px; height: 200px;"></div>
 			<!-- line -->
-			<div class="inline-flex items-center justify-center w-full">
+			<div class="inline-flex items-center justify-center w-full md:hidden lg:hidden">
 				<hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 			</div>
 			<!-- NAVBAR -->
 			<nav class="container mx-auto">
-				<ul class="flex-col p-6 max-w-max mx-auto text-blue-400 m-0">
-					<li class="text-center hover:text-blue-500"><a href="#bio">Qui suis-je?</a></li>
-					<li class="mt-3 text-center hover:text-blue-500"><a href="#competences">Compétences</a></li>
-					<li class="mt-3 text-center hover:text-blue-500"><a href="#formation">Formation</a></li>
-					<li class="mt-3 text-center hover:text-blue-500"><a href="#portfolio">Portfolio</a></li>
+				<ul class="flex-col p-6 max-w-max mx-auto text-blue-400 m-0 md:flex md:flex-row">
+					<li class="md:mt-3 md:mr-6 lg:mr-12 text-center hover:text-blue-500"><a href="#bio">Qui suis-je?</a></li>
+					<li class="mt-3 md:mr-6 lg:mr-12 text-center hover:text-blue-500"><a href="#competences">Compétences</a></li>
+					<li class="mt-3 md:mr-6 lg:mr-12 text-center hover:text-blue-500"><a href="#formation">Formation</a></li>
+					<li class="mt-3 md:mr-6 lg:mr-12 text-center hover:text-blue-500"><a href="#portfolio">Portfolio</a></li>
 					<li class="mt-3 text-center hover:text-blue-500"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<!-- line -->
-			<div class="inline-flex items-center justify-center w-full">
+			<div class="inline-flex items-center justify-center w-full md:hidden lg:hidden">
 				<hr class="w-64 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
 			</div>
 		</header>
 		<main class="container max-w-full">
 			<!-- HOME -->
-			<!--<section>
-				<div class="z-10 bg-contain bg-left bg-no-repeat p-40  ml-80 mb-10" style="background-image: url('/images/CVme1.png'); margin-top: 60px;"></div>
-				<div class="ml-80 p-9">
-					<h1 id="home" class="text-7xl mb-5" style="font-family: 'NothingYouCouldDo';">Lucie Leroty</h1>
-					<p class="text-blue-500 text-6xl" style="font-family: 'Michroma';">Développeuse Web</p>
+			<section id="home_section">
+				<div class="">
+					<!-- background Coupeau -->
+					<div class="z-0 bg-contain bg-no-repeat p-36 mt-0 mb-2" style="background-image: url('/images/CVcoupeau.jpg'); height: 100%; width: auto;">
+						<!-- avatar -->
+						<div class="z-10 bg-contain bg-no-repeat mb-0" style="background-image: url('/images/CVme1.png'); height: 150px; width: auto;"></div>
+						<div class="z-10 mt-0 ml-0 mx-">
+							<h1 id="home" class="text-6xl mt-2 mb-5" style="font-family: 'NothingYouCouldDo';">Lucie Leroty</h1>
+							<p class="text-blue-500 text-4xl" style="font-family: 'Michroma';">Développeuse Web</p>
+						</div>
+					</div>
 				</div>
-			</section> -->
+			</section>
 			<!-- QUI SUIS-JE SECTION -->
 			<section class="md:mx-10 lg:mx-56">
 				<h2 id="bio" class="text-4xl">Qui suis-je?</h2>
