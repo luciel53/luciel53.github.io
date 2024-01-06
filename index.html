@@ -45,8 +45,9 @@
 				<div>
 					<!-- background Coupeau -->
 					<div class="opacity z-0 bg-cover bg-no-repeat filter pl-36 pt-40 pb-52 mt-0 mb-2 lg:pb-120 lg:pt-120" style="background-image: url('/images/CVcoupeau.jpg')">
-						<!-- avatar -->
-						<div class="z-10 bg-contain bg-no-repeat mb-0 lg:p-40 lg:ml-48" style="background-image: url('/images/CVme1.png'); height: 150px; width: auto;"></div>
+						<!-- avatar image -->
+						<div class="z-10 bg-contain bg-no-repeat drop-shadow-lg mb-0 lg:p-40 lg:ml-48" style="background-image: url('/images/CVme1.png'); height: 150px; width: auto;"></div>
+						<!-- Name & title -->
 						<div class="z-10 mt-0 ml-0 pt-8 lg:ml-48 lg:mt-16">
 							<h1 id="home" class="text-6xl mt-6 mb-5 lg:text-7xl" style="font-family: 'NothingYouCouldDo';">Lucie Leroty</h1>
 							<p class="text-blue-500 text-4xl lg:text-5xl lg:mt-6" style="font-family: 'Michroma';">Développeuse Web</p>
@@ -57,7 +58,7 @@
 			<!-- QUI SUIS-JE SECTION -->
 			<section class="md:mx-10 lg:mx-56">
 				<h2 id="bio" class="text-4xl">Qui suis-je?</h2>
-				<div style="float:right"><img src="/images/CVmeappareil.svg" alt="avatar"></div>
+				<div style="float:right;"><img class="avatar_mobile" src="/images/CVmeAppareilPhoto.svg" alt="avatar"></div>
 				<div class="p-6">
 					<p class="text-justify whitespace-pre-line">
 						<span class="underline">Prénom:</span> Lucie<br />
@@ -70,8 +71,8 @@
 						<span class="underline">Expérience:</span> En reconversion, j’ai travaillé dans le milieu équestre et en usine, je connais donc la ténacité la persévérance.<br />
 						<span class="underline">Leitmotiv:</span> Que ma seule limite soit mon imagination.<br />
 					</p>
-					<div class="container text-center mt-8 mb-8">
-						<button class="bg-blue-400 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow-lg">
+					<div class="container text-center mt-8 mb-8 drop-shadow-lg">
+						<button class="bg-blue-400 hover:bg-blue-600 text-white py-2 px-4 rounded">
 							Télécharger mon CV
 						  </button>
 					</div>
@@ -202,27 +203,102 @@
 				<!-- Photographie -->
 				<div><h3>Photographie</h3>
 					<div class="grid grid-cols-2 place-content-center md:max-w-max md:mx-auto lg:grid-cols-4 mt-6">
-						<div class="hover_opacity flex justify-center items-center">
-							<img class="z-0 absolute" src="images/grid/1puydufou.png" alt="">
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/1puydufou.png" alt="Puy-du-fou">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
-							<p class="hover_description hidden z-10 text-white mt-32 font-semibold text-2xl absolute">Puy-du-fou,<br />
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Puy-du-fou,<br />
 							France</p>
 						</div>
-						<div class="hover_opacity"><img src="images/grid/2etna2 1.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/3PerthByNight 1.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/4usineAbandonee 1 (2).png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/5macaque.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/6plitvice.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/7chenonceau.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/8floemeric.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/9playaindo.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/10broceliandre.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/11rizieres.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/12bebe.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/13mtstmich.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/14gorilla.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/15bangkok.png" alt=""></div>
-						<div class="hover_opacity"><img src="images/grid/16ileseoliennes.png" alt=""></div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class=" hover_opacity" src="images/grid/2etna2 1.png" alt="Etna">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Etna,<br />
+							Sicile</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/3PerthByNight 1.png" alt="Perth">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Perth,<br />
+							Australia</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/4usineAbandonee 1 (2).png" alt="Urbex">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Urbex,<br />
+							France</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/5macaque.png" alt="Monkey forest">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Monkey forest,<br />
+							Bali</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/6plitvice.png" alt="Plitvice">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Plitvice,<br />
+							Croatie</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/7chenonceau.png" alt="Chenonceau">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Chenonceau,<br />
+							France</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/8floemeric.png" alt="Mariage">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Mariage en<br />
+							France</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/9playaindo.png" alt="Gili Meno">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Gili Meno,<br />
+							Indonesie</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/10broceliandre.png" alt="Brocéliande">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Brocéliande,<br />
+							France</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/11rizieres.png" alt="Ubud">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Ubud,<br />
+							Bali</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/12bebe.png" alt="Naissance">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Naissance,<br />
+							France</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/13mtstmich.png" alt="Mont St-Michel">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Mont St-Michel,<br />
+							France</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/14gorilla.png" alt="Beauval">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Beauval,<br />
+							France</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/15bangkok.png" alt="Bangkok">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Bangkok,<br />
+							Thaïlande</p>
+						</div>
+						<div class="vignette flex justify-center items-center text-center">
+							<img class="hover_opacity" src="images/grid/16ileseoliennes.png" alt="Îles éoliennes">
+							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
+							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Îles éoliennes,<br />
+							Sicile</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -251,7 +327,7 @@
 							<textarea name="message" id="message" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required /></textarea>
 							<label for="message" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Votre message</label>
 						</div>
-						<div class="text-center">
+						<div class="text-center drop-shadow-lg">
 							<button type="submit" class="text-white bg-blue-400 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-auto max-auto sm:w-auto px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
 						</div>
 					</form>
@@ -259,11 +335,14 @@
 
 				</div>
 			</section>
+			<!-- Implement the Back Top Top Button -->
+			<button id="to-top-button" title="Go To Top"
+			class="hidden fixed z-90 bottom-8 right-8 border-2 w-16 h-16 rounded-full drop-shadow-md bg-blue-500 text-white text-3xl font-bold hover:text-blue-500 hover:bg-white hover:border-blue-500">&uarr;</button>
 
 		</main>
 		<!-- FOOTER -->
 		<footer class="bg-blue-400 text-center">
-			<div class="flex flex-row items-center py-8 px-16">
+			<div class="flex flex-row items-center py-8 px-16 md:px-64 lg:mx-80 lg:px-96">
 				<div class="mx-auto"><img src="images/CVgithub-icon.svg" alt="github"></div>
 				<div class="mx-auto"><img src="images/CVlinkdein-icon.svg" alt="linkedin"></div>
 				<div class="mx-auto"><img src="images/CVmedium.svg" alt="medium"></div>
