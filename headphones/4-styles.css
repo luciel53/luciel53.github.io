@@ -27,7 +27,7 @@ body {
 	max-width: 1400px;
 	height: 800px;
 	flex-shrink: 0;
-	background-image: url(/images/headphones_hero_1.jpg);
+	background-image: url("images/headphones_hero_1.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin: 0 auto; /* to avoid the text exceeds the frame */
