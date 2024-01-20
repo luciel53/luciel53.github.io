@@ -47,6 +47,93 @@ button {
   opacity: 95%;
 }
 
+
+/* carousel */
+#carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+#carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 25%; /* Pour afficher 4 images à la fois sur grand écran */
+  box-sizing: border-box;
+}
+
+#carousel img {
+  width: 100%;
+  height: 280px;
+  display: block;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 54px;
+  border: none;
+  outline: none;
+}
+
+#prev {
+  left: 60px;
+}
+
+#next {
+  right: 60px;
+}
+
+
+
+  /* Scroll snapping */
+
+  .carousel-inner {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-x: repeat(3);
+  }
+
+@media (max-width: 1024px) {
+   /*carousel*/
+   .carousel-item {
+    flex: 0 0 50%; /* Pour afficher 4 images à la fois sur grand écran */
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 627px) {
+  /* to hide home section on mobile versions */
+  #home_section {
+    display: none;
+  }
+
+  /*carousel*/
+  .carousel-item {
+    flex: 0 0 100%; /* Pour afficher 4 images à la fois sur grand écran */
+    box-sizing: border-box;
+  }
+
+  /* grid */
+
+  .vignette:hover .hover_localisation {
+    margin-top: -20px;
+  }
+
+  .vignette:hover .hover_description {
+    padding-bottom: 40px;
+  }
+
+  .avatar_mobile {
+    height: 170px;
+  }
+
+}
+
 /* Vignettes grid */
 .vignette:hover .hover_opacity {
   filter: brightness(30%);
@@ -65,57 +152,4 @@ button {
 
 #message {
 	height: 100px;
-}
-
-
-/* carousel */
-.carousel {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-  }
-
-  .carousel-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-
-  .carousel-item {
-    width: 100%;
-    height: 100%;
-  }
-
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* Scroll snapping */
-
-  .carousel-inner {
-    scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(3);
-  }
-
-@media (max-width: 767px) {
-  /* to hide home section on mobile versions */
-  #home_section {
-    display: none;
-  }
-
-  .vignette:hover .hover_localisation {
-    margin-top: -20px;
-  }
-
-  .vignette:hover .hover_description {
-    padding-bottom: 40px;
-  }
-
-  .avatar_mobile {
-    height: 170px;
-  }
-
 }
