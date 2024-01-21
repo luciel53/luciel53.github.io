@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 	/* Carousel */
+	// define the elements
 	const carousel = document.getElementById('carousel');
 	const prevButton = document.getElementById('prev');
 	const nextButton = document.getElementById('next');
@@ -7,26 +8,60 @@ document.addEventListener('DOMContentLoaded', function () {
 	let currentIndex = 0;
 
 	function updateCarousel() {
+	  //get the width of the element with offsetWidth
 	  const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+	  // moves the carousel
 	  carousel.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
 	}
 
 	function prevSlide() {
-	  if (currentIndex > 0) {
-		currentIndex--;
+	  if (window.innerWidth > 1024) {
+	  	if (currentIndex > 0) {
+			currentIndex--;
+	  	} else {
+			currentIndex = carousel.children.length - 4;
+	  	}
+	  	updateCarousel();
+	  } else if (window.innerWidth <= 1024 && window.innerWidth > 627) {
+		if (currentIndex > 0) {
+			currentIndex--;
+	  	} else {
+			currentIndex = carousel.children.length - 2;
+	  	}
+	  	updateCarousel();
 	  } else {
-		currentIndex = carousel.children.length - 4;
+		if (currentIndex > 0) {
+			currentIndex--;
+	  	} else {
+			currentIndex = carousel.children.length - 1;
+	  	}
+	  	updateCarousel();
 	  }
-	  updateCarousel();
 	}
 
 	function nextSlide() {
-	  if (currentIndex < carousel.children.length - 4) {
-		currentIndex++;
+	  if (window.innerWidth > 1024) {
+	  	if (currentIndex < carousel.children.length - 4) {
+			currentIndex++;
+	  	} else {
+			currentIndex = 0;
+	  	}
+	  	updateCarousel();
+	  } else if (window.innerWidth <= 1024 && window.innerWidth > 627) {
+		if (currentIndex < carousel.children.length - 2) {
+			currentIndex++;
+	  	} else {
+			currentIndex = 0;
+	  	}
+	  	updateCarousel();
 	  } else {
-		currentIndex = 0;
+		if (currentIndex < carousel.children.length - 1) {
+			currentIndex++;
+	  	} else {
+			currentIndex = 0;
+	  	}
+	  	updateCarousel();
 	  }
-	  updateCarousel();
 	}
 
 	prevButton.addEventListener('click', prevSlide);
@@ -71,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	window.addEventListener('resize', updateCarousel);
 	updateCarousel(); // Appel initial pour mettre à jour la disposition
+
 
 	/* top button */
 	var toTopButton = document.getElementById("to-top-button");

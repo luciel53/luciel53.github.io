@@ -60,35 +60,72 @@ button {
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-  flex: 0 0 25%; /* Pour afficher 4 images à la fois sur grand écran */
-  box-sizing: border-box;
-}
-
 #carousel img {
   width: 100%;
   height: 280px;
   display: block;
 }
 
+.carousel-item {
+  height: 10%;
+  flex: 0 0 25%; /* Pour afficher 4 images à la fois sur grand écran */
+  box-sizing: border-box;
+}
+
+.img-project:hover {
+  filter: brightness(40%);
+  z-index: 1;
+}
+
+.carousel-item:hover .project_link {
+  display: flex;
+  z-index: 2;
+}
+
+.carousel-item:hover .paragraph-hover {
+  display: flex;
+  z-index: 2;
+}
+
+.carousel-item:hover .img-project {
+  filter: brightness(25%);
+  z-index: 1;
+}
+
+
+
+
 #prev, #next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  font-size: 54px;
   border: none;
   outline: none;
+  color: rgb(44, 47, 54);
 }
 
 #prev {
-  left: 60px;
+  left: 30px;
+  font-size: 43px;
+  opacity: 85%;
+  box-shadow: rgb(47, 46, 46) 1px 1px 25px 1px;
 }
 
 #next {
-  right: 60px;
+  right: 30px;
+  font-size: 43px;
+  opacity: 85%;
+  box-shadow: rgb(47, 46, 46) 1px 1px 25px 1px;
 }
 
+#prev:hover, #next:hover {
+  opacity: 60%;
+}
+
+#carousel svg {
+  color: white;
+}
 
 
   /* Scroll snapping */
@@ -98,10 +135,10 @@ button {
     scroll-snap-points-x: repeat(3);
   }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 628px) {
    /*carousel*/
    .carousel-item {
-    flex: 0 0 50%; /* Pour afficher 4 images à la fois sur grand écran */
+    flex: 0 0 50%; /* Pour afficher 2 images à la fois sur grand écran */
     box-sizing: border-box;
   }
 }

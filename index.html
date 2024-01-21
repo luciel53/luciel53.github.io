@@ -72,9 +72,11 @@
 						<span class="underline">Leitmotiv:</span> Que ma seule limite soit mon imagination.<br />
 					</p>
 					<div class="container text-center mt-8 mb-8 drop-shadow-lg">
-						<button class="bg-blue-400 hover:bg-blue-600 text-white py-2 px-4 rounded">
-							Télécharger mon CV
-						  </button>
+						<a href="/images/CV Lucie LEROTY web developpeuse.pdf" download="CV Lucie LEROTY web developpeuse.pdf">
+							<button class="bg-blue-400 hover:bg-blue-600 text-white py-2 px-4 rounded">
+								Télécharger mon CV
+							  </button>
+						</a>
 					</div>
 				</div>
 			</section>
@@ -137,7 +139,7 @@
 			<!-- FORMATION SECTION -->
 			<section class="pt-3 pb-12 pl-3 pr-3">
 				<h2 id="formation" class="mb-6 text-4xl">Formation</h2>
-				<strong><h3">Holberton School (Laval, 53)<span class="ml-8">2022-2024</span></h3></strong>
+				<strong><h3>Holberton School (Laval, 53)<span class="ml-8">2022-2024</span></h3></strong>
 				<p>
 					<em>Formation de développeur Fullstack</em><br />
 					Holberton School est une école innovante, sans professeurs, où les élèves apprennent via la réalisation de projets concrets et l’entraide par les pairs. Chez Holberton School c’est 95% de pratique, on apprend à apprendre!<br />
@@ -149,143 +151,245 @@
 				<h2 id="portfolio" class="text-4xl">Portfolio</h2>
 				<!-- Projets -->
 				<div>
-					<h3>Projets</h3>
+					<h3 class="mt-12 pb-5 text-2xl md:ml-12 lg:ml-64 lg:text-3xl">&#10146; Projets</h3>
 					<!-- Pojects carousel!! -->
 					<div>
 						<div id="carousel-container">
 							<div id="carousel">
-							  <div class="carousel-item p-2.5 drop-shadow-md"><img class="rounded-lg" src="/images/carousel-projects/CSS-advanced-screenshot.png" alt="Image 1"></div>
-							  <div class="carousel-item p-2.5 drop-shadow-md"><img class="rounded-lg" src="/images/carousel-projects/headphones-screenshot.png" alt="Image 2"></div>
-							  <div class="carousel-item p-2.5 drop-shadow-md"><img class="rounded-lg" src="/images/carousel-projects/Petmeeting-screenshot.png" alt="Image 3"></div>
-							  <div class="carousel-item p-2.5 drop-shadow-md"><img class="rounded-lg" src="/images/carousel-projects/Airbnb-screenshot.png" alt="Image 4"></div>
-							  <div class="carousel-item p-2.5 drop-shadow-md"><img class="rounded-lg" src="/images/carousel-projects/authentication-service-screenshot.png" alt="Image 5"></div>
-							  <div class="carousel-item p-2.5 drop-shadow-md"><img class="rounded-lg" src="/images/carousel-projects/CSS-advanced-screenshot.png" alt="Image 6"></div>
+							  <div class="carousel-item p-2.5 drop-shadow-md flex justify-center items-center text-center relative">
+								<img class="img-project relative rounded-lg" src="/images/carousel-projects/CSS-advanced-screenshot.png" alt="Image 1">
+								<div class="paragraph-hover absolute z-2 text-3xl hidden top-24">
+									<p>Projet CSS</p>
+								</div>
+								<div class="project_link absolute flex justify-center items-center text-center z-10 hidden mt-14">
+									<div class="w-14 mr-6">
+										<a href="https://github.com/luciel53/holbertonschool-web_front_end/tree/main/CSS_advanced">
+											<img src="/images/carousel-projects/solar_code-boldcoding.svg">
+										</a>
+									</div>
+									<div class="w-10">
+										<a href="https://luciel53.github.io/CSS_advance/index.html">
+											<img src="/images/carousel-projects/fluent-mdl2_websitewww.svg">
+										</a>
+									</div>
+								</div>
+							  </div>
+							  <div class="carousel-item p-2.5 drop-shadow-md flex justify-center items-center text-center relative">
+								<img class="img-project relative rounded-lg" src="/images/carousel-projects/headphones-screenshot.png" alt="Image 1">
+								<div class="paragraph-hover absolute z-2 text-3xl hidden top-24">
+									<p>Headphones project</p>
+								</div>
+								<div class="project_link absolute flex justify-center items-center text-center z-10 hidden  mt-14">
+									<div class="w-14 mr-6">
+										<a href="https://github.com/luciel53/holbertonschool-headphones">
+											<img src="/images/carousel-projects/solar_code-boldcoding.svg">
+										</a>
+									</div>
+									<div class="w-10">
+										<a href="https://luciel53.github.io/headphones/4-index.html">
+											<img src="/images/carousel-projects/fluent-mdl2_websitewww.svg">
+										</a>
+									</div>
+								</div>
+							  </div>
+							  <div class="carousel-item p-2.5 drop-shadow-md flex justify-center items-center text-center relative">
+								<img class="img-project relative rounded-lg" src="/images/carousel-projects/Petmeeting-screenshot.png" alt="Image 1">
+								<div class="project_link absolute flex justify-center items-center text-center z-10 hidden">
+									<p class="text-3xl">PetMeeting, <br>
+										Coming soon...</p>
+									<!--
+									<div class="w-14 mr-6">
+										<a href="">
+											<img src="/images/carousel-projects/solar_code-boldcoding.svg">
+										</a>
+									</div>
+									<div class="w-10">
+										<a href="">
+											<img src="/images/carousel-projects/fluent-mdl2_websitewww.svg">
+										</a>
+									</div>
+									-->
+								</div>
+							  </div>
+							  <div class="carousel-item p-2.5 drop-shadow-md flex justify-center items-center text-center relative">
+								<img class="img-project relative rounded-lg" src="/images/carousel-projects/authentication-service-screenshot.png" alt="Image 1">
+								<div class="paragraph-hover absolute z-2 text-3xl hidden top-24">
+									<p>Creation of a user authentication service</p>
+								</div>
+								<div class="project_link absolute flex justify-center items-center text-center z-10 hidden mt-24">
+									<div class="w-14 mr-6">
+										<a href="https://github.com/luciel53/holbertonschool-web_back_end/tree/main/user_authentication_service">
+											<img src="/images/carousel-projects/solar_code-boldcoding.svg">
+										</a>
+									</div>
+								</div>
+							  </div>
+							  <div class="carousel-item p-2.5 drop-shadow-md flex justify-center items-center text-center relative">
+								<img class="img-project relative rounded-lg" src="/images/carousel-projects/Airbnb-screenshot.png" alt="Image 1">
+								<div class="paragraph-hover absolute z-2 text-3xl hidden top-24">
+									<p>Airbnb clone</p>
+								</div>
+								<div class="project_link absolute flex justify-center items-center text-center z-10 hidden mt-14">
+									<div class="w-14 mr-6">
+										<a href="https://github.com/luciel53/holbertonschool-AirBnB_clone">
+											<img src="/images/carousel-projects/solar_code-boldcoding.svg">
+										</a>
+									</div>
+									<div class="w-10">
+										<a href="https://luciel53.github.io/Airbnb/web_static/100-index.html">
+											<img src="/images/carousel-projects/fluent-mdl2_websitewww.svg">
+										</a>
+									</div>
+								</div>
+							  </div>
+							  <div class="carousel-item p-2.5 drop-shadow-md flex justify-center items-center text-center relative">
+								<img class="img-project relative rounded-lg" src="/images/carousel-projects/CSS-advanced-screenshot.png" alt="Image 1">
+								<div class="project_link absolute flex justify-center items-center text-center z-10 hidden">
+									<div class="w-14 mr-6">
+										<a href="https://github.com/luciel53/holbertonschool-web_front_end/tree/main/CSS_advanced">
+											<img src="/images/carousel-projects/solar_code-boldcoding.svg">
+										</a>
+									</div>
+									<div class="w-10">
+										<a href="https://luciel53.github.io/CSS_advance/index.html">
+											<img src="/images/carousel-projects/fluent-mdl2_websitewww.svg">
+										</a>
+									</div>
+								</div>
+							  </div>
 							</div>
-							<button id="prev">&lt;</button>
-							<button id="next">&gt;</button>
+							<button class="bg-blue-400 pl-6 pr-6 rounded-full" id="prev">&lt;</button>
+							<button class="bg-blue-400 pl-6 pr-6 rounded-full" id="next">&gt;</button>
 						  </div>
 
 					</div>
 				</div>
-				<!-- Articles -->
-				<div><h3>Articles</h3></div>
-					<!-- Articles grid -->
-					<div class="grid grid-cols-2 place-content-center md:max-w-max md:mx-auto lg:grid-cols-4 mt-6">
-						<!-- Item 1 -->
-						<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						    <img src="/images/PYTHONpic.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Python article">
+				<!-- Articles title -->
+				<div><h3 class="mt-12 pb-5 text-2xl md:ml-12 lg:ml-64 lg:text-3xl">&#10146; Articles</h3>
+				<!-- Articles grid -->
+					<div class="grid grid-cols-2 lg:grid-cols-4 md:ml-36 md:mr-36 lg:ml-80 lg:mr-80 place-content-center">
+						<div class="article flex justify-center items-center text-center md:pb-3 md:pt-2">
+							<div class="drop-shadow-lg md:bg-blue-200 mdp-3 md:rounded-lg">
+								<img class="rounded-lg" src="images/grid-articles/PYTHONpic.png">
+							</div>
 						</div>
-						<!-- Item 2 -->
-						<div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-						    <img src="/images/picLIBRARIE.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="C static libraries article">
+						<div class="article flex justify-center items-center text-center md:pb-3 md:pt-2">
+							<div class="drop-shadow-lg">
+								<img class="rounded-lg" src="images/grid-articles/picSPOTIFY.png">
+							</div>
 						</div>
-						<!-- Item 3 -->
-						<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						    <img src="/images/picSPOTIFY.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="spotify article">
+						<div class="article flex justify-center items-center text-center">
+							<div class="drop-shadow-lg">
+								<img class="rounded-lg" src="images/grid-articles/picLIMA.png">
+							</div>
 						</div>
-						<!-- Item 4 -->
-						<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						    <img src="/images/picLIMA.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="petmeeting article">
-						</div>
-
-
+						<div class="article flex justify-center items-center text-center">
+							<div class="drop-shadow-lg">
+								<img class="rounded-lg" src="images/grid-articles/picLIBRARIE.png">
+							</div>
 						</div>
 					</div>
+				</div>
+
+
+
+
+				</div>
 				<!-- Photographie Grid-->
-				<div><h3>Photographie</h3>
+				<div><h3 class="mt-12 pb-5 text-2xl md:ml-12 lg:ml-64 lg:text-3xl">&#10146; Photographie</h3>
 					<div class="grid grid-cols-2 place-content-center md:max-w-max md:mx-auto lg:grid-cols-4 mt-6">
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/1puydufou.png" alt="Puy-du-fou">
+							<img class="hover_opacity" src="images/grid-photography/1puydufou.png" alt="Puy-du-fou">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Puy-du-fou,<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class=" hover_opacity" src="images/grid/2etna2 1.png" alt="Etna">
+							<img class=" hover_opacity" src="images/grid-photography/2etna2 1.png" alt="Etna">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Etna,<br />
 							Sicile</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/3PerthByNight 1.png" alt="Perth">
+							<img class="hover_opacity" src="images/grid-photography/3PerthByNight 1.png" alt="Perth">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Perth,<br />
 							Australia</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/4usineAbandonee 1 (2).png" alt="Urbex">
+							<img class="hover_opacity" src="images/grid-photography/4usineAbandonee 1 (2).png" alt="Urbex">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Urbex,<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/5macaque.png" alt="Monkey forest">
+							<img class="hover_opacity" src="images/grid-photography/5macaque.png" alt="Monkey forest">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Monkey forest,<br />
 							Bali</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/6plitvice.png" alt="Plitvice">
+							<img class="hover_opacity" src="images/grid-photography/6plitvice.png" alt="Plitvice">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Plitvice,<br />
 							Croatie</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/7chenonceau.png" alt="Chenonceau">
+							<img class="hover_opacity" src="images/grid-photography/7chenonceau.png" alt="Chenonceau">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Chenonceau,<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/8floemeric.png" alt="Mariage">
+							<img class="hover_opacity" src="images/grid-photography/8floemeric.png" alt="Mariage">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Mariage en<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/9playaindo.png" alt="Gili Meno">
+							<img class="hover_opacity" src="images/grid-photography/9playaindo.png" alt="Gili Meno">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Gili Meno,<br />
 							Indonesie</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/10broceliandre.png" alt="Brocéliande">
+							<img class="hover_opacity" src="images/grid-photography/10broceliandre.png" alt="Brocéliande">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Brocéliande,<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/11rizieres.png" alt="Ubud">
+							<img class="hover_opacity" src="images/grid-photography/11rizieres.png" alt="Ubud">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Ubud,<br />
 							Bali</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/12bebe.png" alt="Naissance">
+							<img class="hover_opacity" src="images/grid-photography/12bebe.png" alt="Naissance">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Naissance,<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/13mtstmich.png" alt="Mont St-Michel">
+							<img class="hover_opacity" src="images/grid-photography/13mtstmich.png" alt="Mont St-Michel">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Mont St-Michel,<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/14gorilla.png" alt="Beauval">
+							<img class="hover_opacity" src="images/grid-photography/14gorilla.png" alt="Beauval">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Beauval,<br />
 							France</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/15bangkok.png" alt="Bangkok">
+							<img class="hover_opacity" src="images/grid-photography/15bangkok.png" alt="Bangkok">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Bangkok,<br />
 							Thaïlande</p>
 						</div>
 						<div class="vignette flex justify-center items-center text-center">
-							<img class="hover_opacity" src="images/grid/16ileseoliennes.png" alt="Îles éoliennes">
+							<img class="hover_opacity" src="images/grid-photography/16ileseoliennes.png" alt="Îles éoliennes">
 							<img class="hover_localisation hidden z-10 absolute mx-auto" src="images/CViconLocalisation.svg" alt="icon localisation">
 							<p class="hover_description hidden z-10 text-white mt-32 font-semibold sm:text-sm md:text-2xl absolute">Îles éoliennes,<br />
 							Sicile</p>
@@ -334,9 +438,21 @@
 		<!-- FOOTER -->
 		<footer class="bg-blue-400 text-center">
 			<div class="flex flex-row items-center py-8 px-16 md:px-64 lg:mx-80 lg:px-96">
-				<div class="mx-auto"><img src="images/CVgithub-icon.svg" alt="github"></div>
-				<div class="mx-auto"><img src="images/CVlinkdein-icon.svg" alt="linkedin"></div>
-				<div class="mx-auto"><img src="images/CVmedium.svg" alt="medium"></div>
+				<div class="mx-auto hover:opacity-60">
+					<a href="https://github.com/luciel53">
+						<img src="images/CVgithub-icon.svg" alt="github">
+					</a>
+				</div>
+				<div class="mx-auto hover:opacity-60">
+					<a href="www.linkedin.com/in/lucieleroty">
+						<img src="images/CVlinkdein-icon.svg" alt="linkedin">
+					</a>
+				</div>
+				<div class="mx-auto hover:opacity-60">
+					<a href="https://medium.com/@l.leroty">
+					<img src="images/CVmedium.svg" alt="medium">
+					</a>
+				</div>
 			</div>
 			<div class="pb-12">
 				<small class="pb-12 mb-10 text-white">©️ Lucie Leroty</small>
