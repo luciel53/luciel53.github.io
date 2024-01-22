@@ -125,6 +125,25 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	toTopButton.addEventListener('click', goToTop);
 
+	// anim the avatar
+	anime({
+	  targets: ".avatar",
+	  translateY: [-50, 0],
+	  opacity: [0, 1],
+	  duration: 2000,
+	  easing: "easeOutQuad",
+	});
+	// Anime "lucie leroty" and "web developpeuse"
+	anime({
+	  targets: ".name-title",
+	  translateY: [50, 0],
+	  opacity: [0, 1],
+	  duration: 2000,
+	  delay: 500, // Délai de 500ms après l'animation de l'avatar
+	  easing: "easeOutQuad",
+	});
+
+
 
 
 });
