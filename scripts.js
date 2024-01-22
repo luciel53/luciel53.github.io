@@ -143,7 +143,35 @@ document.addEventListener('DOMContentLoaded', function () {
 	  easing: "easeOutQuad",
 	});
 
+	// Liste de mots à afficher
+    const words = ["Curieuse", "Empathe", "A l'écoute", "Créative", "Consciencieuse", "Autodidacte", "Travail en équipe", "Aime apprendre", "Autonomie", "Respect des deadlines", "Perséverante", "Rigoureuse"];
 
+    // Fonction pour créer et animer les mots
+    function createAnimatedWords() {
+      const container = document.getElementById("cloud-container");
+
+      words.forEach(word => {
+        const span = document.createElement("span");
+        span.className = "word";
+        span.innerText = word;
+        container.appendChild(span);
+
+
+
+        anime({
+          targets: span,
+          translateX: () => anime.random(-250, 220),
+          translateY: () => anime.random(-220, 0),
+          rotate: () => anime.random(-60, 60),
+          duration: () => anime.random(1200, 2000),
+          easing: "easeInOutBack",
+          loop: true
+        });
+      });
+    }
+
+    // Appel de la fonction au chargement de la page
+    window.onload = createAnimatedWords;
 
 
 });

@@ -66,8 +66,14 @@ button {
   flex: 0 0 25%; /* Pour afficher 4 images à la fois sur grand écran */
   box-sizing: border-box;
 }
+/*
+.carousel-item:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}*/
 
-.img-project:hover {
+.img-project:hover .paragraph-hover{
   filter: brightness(40%);
   z-index: 1;
 }
@@ -218,4 +224,19 @@ button {
 
 .animate-skills {
   animation: scrollSkills 10s infinite; /* Change 10s to adjust the speed */
+}
+
+/* cloud words */
+#cloud-container {
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+
+}
+
+.word {
+  position: absolute;
+  font-size: 45px;
+  color: #fbfcfc; /* Couleur du texte */
 }
