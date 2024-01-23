@@ -143,10 +143,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	  easing: "easeOutQuad",
 	});
 
-	// Liste de mots à afficher
+	// Word list to print
     const words = ["Curieuse", "Empathe", "A l'écoute", "Créative", "Consciencieuse", "Autodidacte", "Travail en équipe", "Aime apprendre", "Autonomie", "Respect des deadlines", "Perséverante", "Rigoureuse"];
 
-    // Fonction pour créer et animer les mots
+    // function to create and animate the words
     function createAnimatedWords() {
       const container = document.getElementById("cloud-container");
 
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
-    // Appel de la fonction au chargement de la page
+    // call the function when the page is loaded
     window.onload = createAnimatedWords;
 
 
