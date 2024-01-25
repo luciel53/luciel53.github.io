@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	updateCarousel(); // Appel initial pour mettre à jour la disposition
 
 
-	/* top button */
+	// top button
 	var toTopButton = document.getElementById("to-top-button");
 
 	// When the user scrolls down 200px from the top of the document, show the button
@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	  duration: 2000,
 	  easing: "easeOutQuad",
 	});
+
 	// Anime "lucie leroty" and "web developpeuse"
 	anime({
 	  targets: ".name-title",
@@ -143,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	  easing: "easeOutQuad",
 	});
 
+	// !!!! Cloud words in french !!!!!
 	// Word list to print
     const words = ["Curieuse", "Empathe", "A l'écoute", "Créative", "Consciencieuse", "Autodidacte", "Travail en équipe", "Aime apprendre", "Autonomie", "Respect des deadlines", "Perséverante", "Rigoureuse"];
 
@@ -155,8 +157,6 @@ document.addEventListener('DOMContentLoaded', function () {
         span.className = "word";
         span.innerText = word;
         container.appendChild(span);
-
-
 
         anime({
           targets: span,
