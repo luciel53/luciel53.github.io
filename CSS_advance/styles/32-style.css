@@ -682,6 +682,7 @@ ul.row {
 
 .card-work:hover .card-inner {
 	background-color: rgba(0, 0, 0, 0.7);
+	height: 23rem;
 }
 
 .card-work .card-title{
