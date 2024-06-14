@@ -312,6 +312,14 @@ main {
 		}
 	}
 
+/* Anchors */
+a {
+	font-style: normal;
+	font-weight: 100;
+	color: white;
+	text-decoration: none;
+}
+
 /* WHAT WE DO SECTION */
 .what_we_do {
 	max-width: 1400px;
