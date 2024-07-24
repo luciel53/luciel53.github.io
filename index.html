@@ -1178,7 +1178,8 @@
           theme: "classic",
           type: "opt-in",
           content: {
-            message: "Ce site utilise des cookies pour vous garantir la meilleure expérience.",
+            message:
+              "Ce site utilise des cookies pour vous garantir la meilleure expérience.",
             dismiss: "Accepter",
             allow: "Accepter",
             deny: "Refuser",
@@ -1222,7 +1223,13 @@
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m);
-          })(window, document, "script", "https://www.googletagmanager.com/gtag/js?id=G-XD32FE57J2", "ga");
+          })(
+            window,
+            document,
+            "script",
+            "https://www.googletagmanager.com/gtag/js?id=G-XD32FE57J2",
+            "ga"
+          );
 
           window.dataLayer = window.dataLayer || [];
           function gtag() {
@@ -1235,7 +1242,7 @@
 
         function deactivateGoogleAnalytics() {
           // Deactivation of Google Analytics
-          window['ga-disable-G-XD32FE57J2'] = true;
+          window["ga-disable-G-XD32FE57J2"] = true;
         }
       });
     </script>
