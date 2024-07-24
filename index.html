@@ -21,6 +21,11 @@
     <script src="scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
+    />
     <meta property="og:title" content="Lucie LEROTY - Développeuse web" />
     <meta
       property="og:description"
@@ -1158,5 +1163,81 @@
         >
       </div>
     </footer>
+    <!-- Cookies banner -->
+    <script>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          palette: {
+            popup: {
+              background: "#000",
+            },
+            button: {
+              background: "#60a5fa",
+            },
+          },
+          theme: "classic",
+          type: "opt-in",
+          content: {
+            message: "Ce site utilise des cookies pour vous garantir la meilleure expérience.",
+            dismiss: "Accepter",
+            allow: "Accepter",
+            deny: "Refuser",
+            link: "En savoir plus",
+            href: "./cookiesPolitic.html",
+          },
+          onInitialise: function (status) {
+            var didConsent = this.hasConsented();
+            if (didConsent) {
+              // Activate Google analytics if user has consented
+              activateGoogleAnalytics();
+            }
+          },
+          onStatusChange: function (status, chosenBefore) {
+            var didConsent = this.hasConsented();
+            if (didConsent) {
+              // Activate Google analytics if user has consented
+              activateGoogleAnalytics();
+            } else {
+              // Deactivate Google analytics if user didn't consent
+              deactivateGoogleAnalytics();
+            }
+          },
+          onRevokeChoice: function () {
+            // manage revoke if necessary
+            deactivateGoogleAnalytics();
+          },
+        });
+
+        function activateGoogleAnalytics() {
+          // follow code of google analytics
+          (function (i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            (i[r] =
+              i[r] ||
+              function () {
+                (i[r].q = i[r].q || []).push(arguments);
+              }),
+              (i[r].l = 1 * new Date());
+            (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+          })(window, document, "script", "https://www.googletagmanager.com/gtag/js?id=G-XD32FE57J2", "ga");
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+
+          gtag("config", "G-XD32FE57J2");
+        }
+
+        function deactivateGoogleAnalytics() {
+          // Deactivation of Google Analytics
+          window['ga-disable-G-XD32FE57J2'] = true;
+        }
+      });
+    </script>
   </body>
 </html>
